@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vendors/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/client.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Salary Calculator</title>
+</head>
+<body>
+
+    <div id="main-header">Salary Calculator
+    </div>
+
+    <div class="section-header">Add Employee</div>
+        
+    <form class="form-container">
+            <input type="text" class="form-item" id="firstName" placeholder="First Name">
+            <input type="text" class="form-item" id="lastName" placeholder="Last Name">
+            <input type="number" class="form-item" id="id" placeholder="ID">
+            <input type="text" class="form-item" id="title" placeholder="Title">
+            <input type="number" class="form-item" id="salary" placeholder="Annual Salary">
+            <button type="button" class="button" id="submit-emp-button">Submit</button>
+    </form>
+
+    <div class="section-header">Employees</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th id="center">Annual Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="emp-table-body">
+        </tbody>        
+        <tfoot>
+            <tr>
+                <td colspan="6" id="blank-row"></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <div class="total-container">
+        <label for="total" id="total-label">Total Monthly:</label>
+        <label for="totalCost" id="total-cost"></label>
+    </div>
+</body>
+</html>

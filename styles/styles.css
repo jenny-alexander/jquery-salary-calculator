@@ -1,0 +1,126 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: grid;
+    background-color: #f1f1f0;
+    color: black;
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3BCB6;
+    border: 1px solid black;
+    font-size: 38px;
+    height: 120px;
+    max-width: 900px; 
+    border-radius: 5px;
+}
+
+.section-header {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius:10px;
+    outline: none;
+}
+
+#center {
+  text-align: center;
+}
+
+table {
+  width: 900px; 
+  margin-top: 5px;
+  border-collapse: collapse;
+  
+  font-size: 16px;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  font-weight:lighter;
+}
+
+th {
+  background-color: #A3BCB6;
+}
+
+tr:nth-child(even) {
+  background-color: #d1e7e3;
+}
+
+#blank-row {
+  height: 25px;
+  background-color: #A3BCB6;
+}
+
+#salary {
+  text-align: right;
+}
+
+.button {
+  font-size: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #e2e2e2;
+  border: 2px solid #b8b4b4;
+  border-radius: 4px;
+}
+
+#submit-emp-button {
+  margin-top: 10px;
+  margin-left: 785px; /*TODO: Better way to shift button to right?  */
+  display: block;
+} 
+
+.deleteEmployeeButton {
+  align-self: center;
+  display: block; /*This line and the next make sure the delete button is centered within the cell. */
+  margin: auto;
+}
+
+.total-container {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 600px;
+  text-align: right;
+  max-width: fit-content;
+}
+
+.red {
+  background-color: lightcoral;
+  padding: 2px;
+  margin-left: 600px;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    font-size: 17px;
+}
+
+/* Remove the up and down arrows from input type = number 
+in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  
