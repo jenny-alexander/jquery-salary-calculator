@@ -21,7 +21,7 @@ function onReady() {
 /** Create the new employee and add it to the Employee table */
 function submitEmp() {
 
-    //FIRST - check if record exists!
+    //Check if the record exists!
     let id = $( '#id' ).val();
     let idString = id.toString();
 
@@ -100,7 +100,7 @@ function getLocalCurrency( amount, locale, currencyType) {
 }
 
 /**  
- * Delete employee from HTML table, jquery data and employees arra */
+ * Delete employee from HTML table, jquery data and employees array */
 function deleteEmployee ( ) {
 
     //We need to go up 2 levels (to grandparent) in order to the row that Delete
@@ -146,7 +146,7 @@ function updateTotalMonthlyCost( ) {
 
     total_monthly_cost = total_yearly_cost / 12;
 
-    //let red = $( '.total-container' ).hasClass("red");
+    //if the monthly salary cost is > $20,000 highlight the total in red.
     if ( $( '.total-container' ).hasClass("red") ) {
         if ( total_monthly_cost < SALARY_THRESHOLD ) {
             $( '.total-container' ).toggleClass('red');
