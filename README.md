@@ -6,8 +6,16 @@
 
 The jQuery-salary-calculator allows a user to input employees into a table and get a monthly cost associated
 to employee salaries.
-Input: first name, last name, id, title, annual salary
-Output: the monthly cost of all employees on the payroll.
+
+Input: 
+- first name
+- last name
+- id
+- title
+- annual salary
+
+Output: 
+- the monthly cost of all employees on the payroll.
 
 Additional info:
 - ID is a unique field. I used the .data() method from jquery to create a cache system. The id and salary
