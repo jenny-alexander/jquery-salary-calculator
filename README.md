@@ -2,6 +2,10 @@
 
 [Project Instructions](./INSTRUCTIONS.md): click on link to see assignment instructions.
 
+## Screenshot of Salary Calculator
+
+![Salary Calculator](/images/salary_calculator.png)
+
 ## Description
 
 The jQuery-salary-calculator allows a user to input employees into a table and get a monthly cost associated
